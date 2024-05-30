@@ -1,5 +1,6 @@
 {
   "name": "John_Doe",
+  "homepage": "https://seohyun3.github.io/Mid-Term-Project/ ",
   "version": "1.5.0",
   "description": "An elegant responsive bootstrap 4.x theme.",
   "main": "gulpfile.js",
