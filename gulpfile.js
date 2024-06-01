@@ -14,6 +14,7 @@ const clean         = require('gulp-clean');
 
 
 // Paths
+// Paths
 var paths = {
     root: { 
         www:        './public_html'
@@ -28,13 +29,14 @@ var paths = {
         scss:       'public_html/assets/scss/**/*.scss'
     },
     dist: {
-        root:       'public_html/dist',
-        css:        'public_html/dist/css',
-        js:         'public_html/dist/js',
-        imgs:       'public_html/dist/imgs',
-        vendors:    'public_html/dist/vendors'
+        root:       'docs',
+        css:        'docs/assets/css',
+        js:         'docs/assets/js',
+        imgs:       'docs/assets/imgs',
+        vendors:    'docs/assets/vendors'
     }
 }
+
 
 // Compile SCSS
 gulp.task('sass', function() {
