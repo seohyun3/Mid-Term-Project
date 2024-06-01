@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html style="text-align:center">
+<head>
+    <meta charset="utf-8">
+    <title>my resume</title>
+    
+    <style>
+        html,body{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            zoom:0.8;
+            overflow-x:hidden;
+        }
+        .box{max-width:1060px;
+             margin:0 auto;
+            }
+        
+        header p{font-size:35px; margin:0;}
+        h2{font-family:"Times New Roman";}
+        h3{font-family:"Times New Roman";}
+        header{
+            background:rgb(40, 40, 44);
+            color:white; 
+            height:50px; 
+            text-align:center; 
+            max-width:1060px;
+            margin:auto;
+        }
+        nav{
+            float:none; 
+            height:45px; 
+            font-family:"Times New Roman";
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #a6a5a7;
+                    }
+                    li {
+                    float: left;
+                    }
+                    li a {
+                    display: inline-block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    }
+                    li a:hover {
+                    background-color: #323232;
+                    }
+            }
+        section{overflow:hidden;}  
+        article{
+            float:left; 
+            min-height:650px; 
+            width:300px; 
+            background:white; 
+            clear:left; 
+            text-align:center;
+            overflow: auto;
+        }
+        .box4{
+            float:left; 
+            min-height:650px; 
+            width:760px;
+            background:lightgray; 
+            clear:right; 
+            text-align:center;
+            overflow: auto;}
+        .box5{
+            
+            height:300;
+            max-width:1060px;
+            background:rgb(214, 214, 214);
+            text-align:center;
+        }
+
+        table{
+            border: 1px solid lightgray;
+            width:220px; height:160px;
+            border-spacing: 0; 
+            border-bottom:0;
+            margin:auto;
+            text-align:center;
+        }
+        article th{
+            border: 1px solid white;
+            width:70px;
+            background:lightgray;
+            border-right: 1px solid lightgray;
+            border-bottom:1px solid lightgray;
+        }
+        article td{
+            border: 1px solid white;
+            width:150px;
+            background:white;
+            border-bottom: 1px solid lightgray;
+            
+        }
+
+        .block{
+            display:block;
+            width: 200px;
+            height: 200px;
+            border: 3px solid black;
+            margin: 15px;
+            float: left;
+            overflow: hidden;
+            position: relative;
+        }
+        .block img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+        footer{
+            height:50px; background:white; clear:both; text-align:center; padding:10px; font-family:"Times New Roman";
+        }
+        
+        
+            
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <header><p>노서현의 홈페이지</p></header>
+   
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    
+    <section>
+        <article>
+            <br>
+            <h2>32221452 노서현</h2>
+            <a href="images/penguin.jpg">
+            <img src="images/penguin.jpg" ,alt="photo" ,width="150", height="180">
+            </a>
+            <br>
+            <br>
+
+            <table style>
+                <tr>
+                    <th scope="row">이름</th>
+                    <td>노서현</td>
+                </tr>
+                <tr>
+                    <th scope="row">학번</th>
+                    <td>32221452</td>
+                </tr>
+                <tr>
+                    <th scope="row">학과</th>
+                    <td>산업보안학과</td>
+                </tr>
+                <tr>
+                    <th scope="row">학년</th>
+                    <td>3학년</td>
+                </tr>
+                
+            </table>
+        </article>
+    
+    <article class="box4">
+        
+        <h3>Education</h3>
+        <P>
+            Relevant Course Work: System Security, Malware Analysis<br>
+        </p>
+        <details>
+            <summary><b> Youtube(click triangle) </b></summary> <!--동영상 재생-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/l2Hh4hsq9l0?si=UcaklTQoJ8rD2h-t" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+            </iframe>
+        </details>
+        <hr>
+        <h3>My Skills</h3>
+        <div class="block">
+            <img src="images/c++.jpg" alt="C++">
+        </div>
+        
+        <div class="block">
+            <img src="images/shap.jpg" alt="C#">
+        </div>
+        
+        <div class="block">
+            <img src="images/java.jpg" alt="Java">
+        </div>
+        
+        <div class="block">
+            <img src="images/python.jpg" alt="Python">
+        </div>
+        
+        <div class="block">
+            <img src="images/react.jpg" alt="React">
+        </div>
+        
+        <div class="block">
+            <img src="images/javascript.jpg" alt="JavaScript">
+        </div>
+    </article>
+    </section>
+<div class="box5">
+    <article id="contact">
+        <h2>Contact</h2>
+        <form>
+        Employment Type : 
+        <input type="radio" name="time" value="1">Full-time
+        <input type="radio" name="time" value="2">Part-time<br>
+        Name : <input type="name"><br>
+        Company : <input type="company"><br>
+        Email : <input type="email" placeholder="id@host"><br>
+        <input type="submit" value="submit">
+        </form>     
+    </article>
+    <footer>
+        <i> Copyright &copy; 2024 노서현</i>
+        </footer>
+    </div>
+
+</body>
+</html>
