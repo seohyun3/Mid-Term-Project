@@ -89,9 +89,17 @@ gulp.task('clean', function () {
     return gulp.src(paths.dist.root)
         .pipe(clean());
 });
+// HTML 파일을 dist로 복사
+gulp.task('html', function() {
+    return gulp.src(paths.src.html)
+        .pipe(gulp.dest(paths.dist.root));
+});
 
-// Prepare all assets for production
-gulp.task('build', gulp.series('sass', 'css', 'js', 'vendors', 'img'));
+// 모든 자산을 프로덕션용으로 준비
+gulp.task('build', gulp.series('clean', 'sass', 'css', 'js', 'vendors', 'img', 'html'));
+
+
+
 
 
 // Watch (SASS, CSS, JS, and HTML) reload browser on change
